@@ -86,7 +86,7 @@ python3 importer.py antispider7
 
 运行完成之后如果没有报错就说明账号导入成功了，可以自行连上 Redis 看下。
 
-过一会访问 [http://localhost:6777/antispider7/random](http://localhost:6777/antispider7/random) 即可获取一个 [antispider7](https://antispider7.scrape.center) 的随机可用 Cookies。
+过一会访问 [http://localhost:6778/antispider7/random](http://localhost:6777/antispider7/random) 即可获取一个 [antispider7](https://antispider7.scrape.center) 的随机可用 Cookies。
 
 ## 常规方式运行
 

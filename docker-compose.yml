@@ -5,15 +5,16 @@ services:
     container_name: redis4accountpool
     command: redis-server
     ports:
-      - "6333:6379"
+      - "6334:6379"  # 主机端口6334映射到容器端口6379
+
   accountpool:
     build: .
     image: 'germey/accountpool'
     container_name: accountpool
     ports:
-      - "6777:6777"
+      - "6778:6777"  # 主机端口6778映射到容器端口6777
     environment:
-      REDIS_HOST: redis4accountpool
-      REDIS_PORT: "6379"
-      API_PORT: "6777"
+      REDIS_HOST: redis4accountpool  # 使用 Redis 服务名称
+      REDIS_PORT: "6379"  # 使用 Redis 容器端口
+      API_PORT: "6777"  # 设置 API 端口
       WEBSITE: antispider7
